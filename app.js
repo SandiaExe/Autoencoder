@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
         console.log("Cargando modelo...");
         try {
             // Ruta al 'model.json' que generaste
-            model = await tf.loadLayersModel('model.json');
+            model = await tf.loadGraphModel('model.json');
             console.log("¡Modelo cargado!");
             document.getElementById('reconstruct-btn').disabled = false;
             document.getElementById('reconstruct-btn').innerText = "Reconstruir";
@@ -157,3 +157,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
