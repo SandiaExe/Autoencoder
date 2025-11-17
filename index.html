@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoencoder MNIST</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+</head>
+<body>
+    <h1>Dibuja un número</h1>
+    <p>Dibuja un dígito en el lienzo izquierdo. El autoencoder lo reconstruirá en el lienzo derecho.</p>
+
+    <div class="container">
+        <div class="canvas-wrapper">
+            <h3>Tu Dibujo</h3>
+            <canvas id="drawing-canvas" width="280" height="280"></canvas>
+        </div>
+        <div class="canvas-wrapper">
+            <h3>Reconstrucción</h3>
+            <canvas id="reconstruction-canvas" width="280" height="280"></canvas>
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button id="reconstruct-btn">Reconstruir</button>
+        <button id="clear-btn">Limpiar</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
